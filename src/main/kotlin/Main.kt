@@ -1,7 +1,11 @@
-fun main() {
-    println("Hello World!")
+import chess.Game
+import chess.PlayStatus
+import chess.Player
 
-    // Try adding program arguments via Run/Debug configuration.
-    // Learn more about running applications: https://www.jetbrains.com/help/idea/running-applications.html.
-    println("Program arguments: ${args.joinToString()}")
+fun main() {
+
+    var whiteP = Player()
+    var blackP = Player()
+
+    var game = Game(whiteP, blackP)
 }
